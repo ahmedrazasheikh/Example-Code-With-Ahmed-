@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <title>login-pages</title>
+</head>
+
+
+
+  <body>
+  
+              
+  
+          
+
+
+
+ <!-- Button trigger modal -->
+ <div class="btn-login-div">
+  <button type="button" class="login-form-button" data-toggle="modal" data-target="#exampleModalCenter"> LOG IN </button> 
+</div>
+  
+   <!-- Modal -->
+     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content">
+     
+
+
+
+      <div class="modal-body">
+          <div class="container-login-page">
+          <div class="card">
+          <div class="loform">
+          <div class="left-side">
+            <img src="assets//images/login-img.png" alt="" class="login-img">
+      </div>
+
+
+
+    <div class="right-side ">
+       <div class="main active">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+       </button>
+
+        <div class="manage">
+           <h2>Welcome Back To Tatsu Threads</h2>
+           <p>  Log in  </p>
+      </div>                        
+       </div>
+        
+      <div class="input_div login-input-feild">
+        <div class="input_text">
+        <input type="text" require required>
+        <label>Email</label>
+      </div>
+      </div>
+
+     <div class="input_div login-input-feild">
+           <div class="input_text">
+           <input class="pass_type" type="password" require required>
+           <label>Password</label> <i class="fa fa-eye-slash password_eye"></i>
+    </div>
+    </div>
+
+     <div class="agree">
+      <span><i class="fa fa-check"></i>  </span>
+    
+       <p>Remember me </p>  <p class="forgeted-password"><a href="#"> Forgot Password?</a>.</p>
+    </div>
+    <div class="button step_1"> <button class="btn-login ">LOG IN</button> </div>
+    </div>
+                      
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+            
+
+         
+          
+        </div>
+     
+        </div>
+      
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+     <!-- tastimonial -->
+    
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   
+<script>
+      var next_click=document.querySelectorAll(".next_btn");
+      var prev_click=document.querySelectorAll(".prev_btn");
+      var sbmt_click=document.querySelectorAll(".sbmt_btn");
+      var main_page=document.querySelectorAll(".main");
+      var p_bar =document.querySelectorAll(".progres_bar li");
+      var written_name=document.querySelector(".written_name");
+      var shown_name=document.querySelector(".shown_name");
+
+      let formnumber=0;
+
+     var passeye=document.querySelector(".password_eye");
+     var pass_type=document.querySelector(".pass_type");
+     var set_pass=document.querySelector(".password_eye");
+
+     var confirm_passeye=document.querySelector(".con_eye");
+     var confirm_pass_type=document.querySelector(".confirm_pass_type");
+     var confirm_set_pass=document.querySelector(".con_eye");
+ 
+     var tick=document.querySelector(".agree span");
+     tick.addEventListener('click',function(){
+     tick.classList.toggle('agree_green');
+     });
+
+     var tick_green=document.querySelector(".agree_submit span");
+     tick_green.addEventListener('click',function(){
+       tick_green.classList.toggle('agree_submit_green');
+          });
+
+
+     passeye.addEventListener('click',function(){
+
+     if(pass_type.type=="password"){
+     pass_type.type="text";
+     set_ pass.classList.remove('fa-eye-slash');
+     set_pass.classList.add('fa-eye');}
+     else{
+     pass_type.type="password";
+     set_pass.classList.add('fa-eye-slash');
+     set_pass.classList.remove('fa-eye'); }});
+
+
+     confirm_passeye.addEventListener('click',function(){
+ 
+    if(confirm_pass_type.type=="password"){
+    confirm_pass_type.type="text";
+    confirm_set_pass.classList.remove('fa-eye-slash');
+    confirm_set_pass.classList.add('fa-eye');
+    }
+    else{
+    confirm_pass_type.type="password";
+    confirm_set_pass.classList.add('fa-eye-slash');
+    confirm_set_pass.classList.remove('fa-eye');
+    }
+    });
+
+
+
+    next_click.forEach(function(btn){
+    btn.addEventListener('click',function(){
+    if(!validate_form()){
+    return false;
+    }
+    formnumber++;
+    update_form();
+    progress_forward();
+    });
+    });
+
+    prev_click.forEach(function(btn){
+    btn.addEventListener('click',function(){
+    formnumber--;
+    update_form();
+    progress_backward();
+    });
+    });
+
+    sbmt_click.forEach(function(btn){
+    btn.addEventListener('click',function(){
+    if(!validate_form()){
+    return false;
+    }
+    formnumber++;
+    update_form();
+    shown_name.innerHTML=written_name.value;
+    });
+    });
+
+    function progress_forward(){
+    p_bar[formnumber].classList.add('active');
+    }
+
+    function progress_backward(){
+    var f_num = formnumber+1;
+    p_bar[f_num].classList.remove('active');
+    }
+
+
+
+    function update_form(){
+    main_page.forEach(function(main_pages){
+    main_pages.classList.remove('active');
+    });
+    main_page[formnumber].classList.add('active');
+    }
+
+    function validate_form(){
+    var validate=true;
+    var all_inputs=document.querySelectorAll(".main.active input");
+    all_inputs.forEach(function(inpt){
+    inpt.classList.remove('warning');
+    if(inpt.hasAttribute("require")){
+    if(inpt.value.length=="0"){
+    validate=false;
+    inpt.classList.add('warning');
+    }
+    }
+    });
+    return validate;
+    }
+        </script>
+
+
+
+
+
+
+  </body>
+  </html>

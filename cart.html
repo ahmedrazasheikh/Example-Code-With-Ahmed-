@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <title>Cart</title>
+</head>
+
+
+
+
+
+<body id="cart-page">
+
+
+   <header id="header" class="fixed-top">
+        <div class="container-d-flx aling-item-center">
+            <h3 class="teck-header-text"> Spend $50 for free shipping </h3>
+        </div>
+    </header>
+
+
+     
+    
+    <section id="teck-nav-menu" class="tec-nav-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 main-menu">
+
+                     
+                     <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-csub-totalontrols="offcanvasExample">
+                        <img src="assets/images/menu-icon.svg" class="" alt="">
+                      </a> -->
+                      <button class="btn tatsu-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <img src="assets/images/menu-icon.svg" class="img-fluid" alt="">
+                      </button>
+                      
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body slide-menu">
+                         <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="collection.html">Collection</a></li>
+                            <li><a href="subscriptions.html">Subscriptions</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                         </ul>
+                        </div>
+                      </div>
+                     
+                     
+                
+
+              
+                </div>
+                <!-- Nav-Menu-close--> 
+               
+         
+                 
+                <!--Container Main start-->
+                
+                <!--Container Main end-->
+                      
+                  
+
+
+                      <!--menu-->
+
+          
+
+         
+        
+
+                <div class="col-xl-6 teck-main-logo">
+                    <a href="index.html"><img src="assets/images/header-logo-1.svg" class="teck-logo" alt=""></a>
+
+                </div>
+
+                 <div class="col-xl-3 main-menu-icon">
+                      <div class="social-icon">
+                        <!--<span class="search-bar-toggle">-->
+                        <!--    <form class="form-inline my-2 my-lg-0">-->
+                        <!--        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                        <!--        <a href="#"> <img src="assets/images/search-icon.svg" class="search-icon img-fluid" alt=""> </a>-->
+                        <!--    </form>-->
+                        <!--</span>-->
+                       <a href="#"> <span class="user-icon"> <img src="assets/images/user.svg" class="shopping-icon-icon user img-fluid" alt=""> </span> </a>
+                       <a href="#"> <span> <img src="assets/images/shopping-icon.svg" class=" img-fluid" alt=""> </span> </a>
+                      </div>
+                </div>
+           </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <section id="tatasu-table">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 cart-table">
+                    <h1>Cart</h1>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">QUANTITY</th>
+                            <th scope="col">QUANTITY</th>
+                            <th scope="col">TOTAL</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                                
+                                <div class="cart-product">
+                                    <div class="product-img">
+                                        <img src = ".//assets/images/cart-product-img.png" alt = "">
+                                    </div>
+                                    <div class="product-detail">
+                                        <h6>kenshi Tee</h6>
+                                        <p>Tokyo Ghoul/s</p>
+                                        <a href="#">REMOVE</a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </td>
+                            <td>
+                                
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                                
+                                
+                            </td>
+                            <td><div class="product-prize"><h6>$30.00</h6></div></td>
+                          </tr>
+                          
+                          <tr>
+                            <td>
+                                
+                                <div class="cart-product">
+                                    <div class="product-img">
+                                        <img src = ".//assets/images/cart-product-img.png" alt = "">
+                                    </div>
+                                    <div class="product-detail">
+                                        <h6>kenshi Tee</h6>
+                                        <p>Tokyo Ghoul/s</p>
+                                        <a href="#">REMOVE</a>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </td>
+                            <td>
+                                
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-left-minus1 btn btn-danger btn-number"  data-type="minus" data-field="">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                        </button>
+                                    </span>
+                                    <input type="text" id="quantity1" name="quantity" class="form-control input-number" value="10" min="1" max="100">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="quantity-right-plus1 btn btn-success btn-number" data-type="plus" data-field="">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                                
+                                
+                            </td>
+                            <td>
+                                
+                                <div class="product-prize">
+                                    <p>$60.00</p>
+                                    <h6>$00.00</h6>
+                                    <h6>B1G2</h6>
+                                </div>
+                                
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="row">
+                          <div class="col-xl-6"></div>
+                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 cart-page-col">
+                          <div class="sub-total">
+                            <h6>SUBTOTAL</h6>
+                            <p>$30.00</p>
+                        </div>
+                        <div class="shipping">
+                            <p>Shipping taxes, snd discount calculated at checkout.</p>
+                            <p>You're saving $60.00 on this order</p>
+                        </div>
+                        <div class="cart-page-btn">
+                            <div class="cart-btn">
+                                <a href="#">UPDATE CART</a>
+                            </div>
+                            <div class="cart-btn">
+                                <a href="#">CHECK OUT</a>
+                            </div>
+                        </div>
+                      </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer -->
+    <section>
+      <footer id="footer">
+    <div class="container footer-container">
+        <div class="row footer-row">
+            <div class="col-xl-3 footer-col logo-box">
+                <a class="footer-logo" href="#"><img src="assets/images/footer-logo.png"></a>
+                <h2 class="footer-para-text">lorem ipsum dolor sit amet, consectetur adipiscing elit. sed euismod libero nec arcu vehicula congue.</h2>
+                <div class="icon-box">
+                    <a href="#" class="facebook">  <img src="assets/images/facbook-icon.svg" class="social-icons">   </a>
+                    <a href="#" class="instagram"> <img src="assets/images/instagram-icon.svg" class="social-icons"> </a>
+                    <a href="#" class="pinterest"> <img src="assets/images/pinterest-icon.svg" class="social-icons"> </a>
+                    <a href="#" class="youtube">   <img src="assets/images/youtube-icon.svg" class="social-icons">   </a>
+                    <a href="#" class="twitter">   <img src="assets/images/twitter-icon.svg" class="social-icons">   </a>
+                </div>
+            </div>
+            <div class="col-xl-3 footer-col menu-col">
+                <div class="menu-box quick-links">
+                    <h3 class="footer-menu-heading">Quick Links</h3>
+                    <ul>
+                         <a href="#"> <li>About Us</li>    </a>
+                         <a href="#"> <li>Collection</li>  </a>
+                         <a href="#"> <li>Contact</li>     </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 footer-col menu-col">
+                <div class="menu-box">
+                    <h3 class="footer-menu-heading">Useful Links</h3>
+                    <ul>
+                         <a href="#"> <li>FAQ's</li>                 </a>
+                         <a href="#"> <li>Terms and Conditions</li>  </a>
+                         <a href="#"> <li>Subscription</li>          </a>
+                         <a href="#"> <li>Privacy Policy</li>        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 footer-col menu-col subscription-menu">
+                <h3 class="footer-menu-heading">Newsletter Subscription</h3>
+                <h2 class="footer-para-text">lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <form action="" method="post" class=" contact-input-feild">
+                    <input class="emial-input" type="email" placeholder="   Email Address" name="email"><br>
+                    <button type="button" class="teck-btn-contact-7">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+     <!-- tastimonial -->
+    
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+   
+<script>
+    $(document).ready(function(){
+
+var quantitiy=0;
+   $('.quantity-right-plus').click(function(e){
+        
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+            
+            $('#quantity').val(quantity + 1);
+
+          
+            // Increment
+        
+    });
+
+     $('.quantity-left-minus').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity').val());
+        
+        // If is not undefined
+      
+            // Increment
+            if(quantity>0){
+            $('#quantity').val(quantity - 1);
+            }
+    });
+    
+});
+</script>
+
+
+
+<script>
+    $(document).ready(function(){
+
+var quantitiy=0;
+   $('.quantity-right-plus1').click(function(e){
+        
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity1').val());
+        
+        // If is not undefined
+            
+            $('#quantity1').val(quantity + 1);
+
+          
+            // Increment
+        
+    });
+
+     $('.quantity-left-minus1').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        var quantity = parseInt($('#quantity1').val());
+        
+        // If is not undefined
+      
+            // Increment
+            if(quantity>0){
+            $('#quantity1').val(quantity - 1);
+            }
+    });
+    
+});
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+  </html>
